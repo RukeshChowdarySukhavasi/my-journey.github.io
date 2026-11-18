@@ -63,9 +63,10 @@ h1 .accent{color:#ff526e;text-shadow:0 0 35px rgba(255,54,94,.28)}
 .section h2{font-size:clamp(34px,5vw,54px);letter-spacing:-.065em;line-height:1.05}
 .section h2 em{font-style:normal;color:#ff5a78}
 .section-sub{color:var(--muted);line-height:1.8;font-size:14px;margin-top:16px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:20px;background:linear-gradient(120deg,rgba(255,53,95,.08),rgba(255,255,255,.018));overflow:hidden}
-.stat{padding:30px;text-align:center}.stat+.stat{border-left:1px solid var(--line)}
-.stat strong{display:block;font-size:32px;letter-spacing:-.06em;color:#fff}.stat span{display:block;margin-top:8px;font:9px var(--mono);letter-spacing:.13em;text-transform:uppercase;color:#b9a6b3}
+.focus-section{padding:34px 0 46px}
+.focus-strip{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:#c8b8c2;font:10px var(--mono);letter-spacing:.06em}
+.focus-strip span+span{border-left:1px solid var(--line);padding-left:20px}
+.project-icon{display:none}
 .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px;align-items:stretch}
 .about-aside,.glass{border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(255,64,103,.09),rgba(255,255,255,.018));box-shadow:0 18px 60px rgba(0,0,0,.16)}
 .about-aside{padding:30px;display:flex;flex-direction:column;justify-content:space-between;min-height:320px}
@@ -177,10 +178,9 @@ img{max-width:100%}
   .section-head{margin-bottom:34px}
   .section h2{font-size:clamp(32px,9vw,44px)}
   .section-sub{font-size:13px}
-  .stats{grid-template-columns:minmax(0,1fr)}
-  .stat{padding:20px 16px}
-  .stat+.stat{border-left:0;border-top:1px solid var(--line)}
-  .stat strong{font-size:28px}
+  .focus-section{padding:22px 0 34px}
+  .focus-strip{justify-content:center;flex-wrap:wrap;gap:10px 16px;padding:15px 0;font-size:9px;text-align:center}
+  .focus-strip span+span{border-left:0;padding-left:0}
   .projects,.capabilities{grid-template-columns:minmax(0,1fr);gap:12px}
   .project{padding:22px}
   .project-top{margin-bottom:20px}
@@ -233,16 +233,18 @@ img{max-width:100%}
 <div class="portrait-stage" aria-label="Portrait of Rukesh Chowdary"><div class="orbit"></div><div class="float-tag tag-one">PLAYWRIGHT · CYPRESS</div><div class="float-tag tag-two">TEST. LEARN. IMPROVE.</div><div class="portrait-card"><div class="portrait-monogram" aria-hidden="true">R.</div><img class="portrait-photo" src="/my-journey.github.io/assets/rukesh-portrait.jpg?v=20261118" alt="Professional portrait of Rukesh Chowdary" onerror="this.hidden=true;this.parentElement.classList.add('portrait-fallback')"><div class="portrait-label"><b>Rukesh Chowdary</b>QUALITY ENGINEER / AUTOMATION</div></div></div>
 </div><div class="scroll-cue">Scroll to explore<span>↓</span></div></section>
 
-<section class="section" id="impact"><div class="wrap reveal"><div class="stats">
-<div class="stat"><strong>UI · API · E2E</strong><span>Testing coverage</span></div>
-<div class="stat"><strong>Playwright + Cypress</strong><span>Automation toolkit</span></div>
-<div class="stat"><strong>Quality first</strong><span>Engineering mindset</span></div>
-</div></div></section>
+<section class="section focus-section" id="impact"><div class="wrap reveal">
+<div class="focus-strip" aria-label="Testing and automation focus">
+<span>UI, API &amp; End-to-End Testing</span>
+<span>Playwright · Cypress · Appium</span>
+<span>Functional · Integration · Regression</span>
+</div>
+</div></section>
 
-<section class="section" id="projects"><div class="wrap"><div class="section-head reveal"><div class="kicker">Selected work</div><h2>Projects that <em>prove it.</em></h2><p class="section-sub">Selected automation and product-quality work across web and mobile platforms.</p></div>
+<section class="section" id="projects"><div class="wrap"><div class="section-head reveal"><div class="kicker">Projects</div><h2>Selected <em>work.</em></h2><p class="section-sub">A few examples of my work in test automation and software quality.</p></div>
 <div class="projects">
-<article class="project reveal"><div class="project-top"><span class="project-index">01 / AUTOMATION</span><span class="project-icon">⌘</span></div><h3>Unizo E2E Automation</h3><p>Built a maintainable end-to-end automation framework using Cypress and TypeScript, with reusable commands and YAML-driven test definitions to standardize regression execution and strengthen coverage.</p><div class="pills"><span class="pill">Cypress</span><span class="pill">TypeScript</span><span class="pill">YAML</span><span class="pill">CI/CD</span></div></article>
-<article class="project reveal"><div class="project-top"><span class="project-index">02 / PRODUCT QUALITY</span><span class="project-icon">◈</span></div><h3>Flobur</h3><p>End-to-end quality engineering across customer, vendor, provider and admin workflows for an AV event-production platform. Developing web UI automation with Playwright and TypeScript, plus mobile automation with Appium, supported by API, integration and regression testing.</p><div class="pills"><span class="pill">Playwright</span><span class="pill">TypeScript</span><span class="pill">Appium</span><span class="pill">API Testing</span><span class="pill">E2E</span></div></article>
+<article class="project reveal"><div class="project-top"><span class="project-index">01 / AUTOMATION</span></div><h3>UNIZO</h3><p>Developed an end-to-end automation framework using Cypress and TypeScript. Added reusable commands, YAML-based test definitions and API interception to support maintainable test scenarios and repeatable regression runs.</p><div class="pills"><span class="pill">Cypress</span><span class="pill">TypeScript</span><span class="pill">YAML</span><span class="pill">API Interception</span></div></article>
+<article class="project reveal"><div class="project-top"><span class="project-index">02 / QUALITY ENGINEERING</span></div><h3>Flobur</h3><p>Contribute to quality engineering for an AV event-production platform through functional, API, integration and regression testing. Developing web automation with Playwright and TypeScript, alongside mobile automation with Appium.</p><div class="pills"><span class="pill">Playwright</span><span class="pill">TypeScript</span><span class="pill">Appium</span><span class="pill">API Testing</span><span class="pill">Regression</span></div></article>
 </div></div></section>
 
 <section class="section" id="about"><div class="wrap"><div class="section-head reveal"><div class="kicker">A little about me</div><h2>Curiosity meets <em>craft.</em></h2></div>
