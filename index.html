@@ -167,8 +167,8 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
 /* Cinematic red portfolio treatment inspired by the supplied reference */
 body{isolation:isolate;background:#08070a}
-#particles{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;opacity:.72}
-.ambient-glow{position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 12% 42%,rgba(171,23,65,.23),transparent 38%),radial-gradient(ellipse at 85% 58%,rgba(116,18,52,.16),transparent 35%),radial-gradient(ellipse at 50% 100%,rgba(89,12,39,.12),transparent 48%)}
+#particles{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.9}
+.ambient-glow{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse at 12% 42%,rgba(171,23,65,.23),transparent 38%),radial-gradient(ellipse at 85% 58%,rgba(116,18,52,.16),transparent 35%),radial-gradient(ellipse at 50% 100%,rgba(89,12,39,.12),transparent 48%)}
 .nav-wrap{background:rgba(9,8,12,.78);border-bottom:1px solid rgba(255,94,128,.16);backdrop-filter:blur(18px)}
 nav{min-height:76px}
 .logo{font-size:23px}
@@ -231,6 +231,7 @@ h1 .accent{color:#ff526f;text-shadow:0 0 34px rgba(255,53,96,.24)}
   #particles{display:none}
 }
 
+main,footer{position:relative;z-index:1}
 </style>
 </head>
 <body>
