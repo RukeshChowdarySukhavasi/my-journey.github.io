@@ -45,7 +45,7 @@ h1 .accent{color:#ff526e;text-shadow:0 0 35px rgba(255,54,94,.28)}
 .orbit:after{inset:78px;border-style:dashed}
 @keyframes spin{to{transform:rotate(360deg)}}
 .portrait-card{width:min(350px,78%);aspect-ratio:4/5;border:1px solid rgba(255,114,142,.42);border-radius:28px;background:linear-gradient(145deg,rgba(255,72,111,.2),rgba(27,13,24,.92) 48%,rgba(8,6,9,.96));position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;box-shadow:0 25px 100px rgba(0,0,0,.5),0 0 55px rgba(255,35,83,.19);transform:rotate(2deg)}
-.portrait-card:before{content:"";position:absolute;width:280px;height:280px;top:8%;border-radius:50%;background:#ff365e;filter:blur(85px);opacity:.25}
+.portrait-card:before{content:"";position:absolute;z-index:1;inset:0;background:linear-gradient(180deg,rgba(8,6,9,.02) 48%,rgba(8,6,9,.42));pointer-events:none}.portrait-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;z-index:0}.portrait-label{z-index:2}
 .portrait-monogram{position:absolute;top:17%;font-size:clamp(100px,18vw,190px);font-weight:800;letter-spacing:-.12em;color:rgba(255,255,255,.09);text-shadow:0 0 50px rgba(255,65,104,.18)}
 .person-silhouette{position:relative;width:65%;height:66%;background:linear-gradient(145deg,#30232c,#0b080c 70%);clip-path:polygon(35% 0,65% 0,75% 16%,100% 100%,0 100%,25% 16%);filter:drop-shadow(0 0 28px rgba(255,50,90,.3))}
 .person-silhouette:before{content:"";position:absolute;top:0;left:33%;width:34%;height:27%;border-radius:48% 48% 42% 42%;background:linear-gradient(135deg,#8e6a65,#24191d 70%);box-shadow:0 0 30px rgba(255,65,90,.28)}
@@ -116,7 +116,7 @@ footer{padding:30px 0 40px;color:#8f808a;font:10px var(--mono);letter-spacing:.0
 <div class="hero-actions"><a class="btn" href="#projects">Explore my work <span>↗</span></a><a class="btn secondary" href="#contact">Get in touch <span>↗</span></a></div>
 <div class="availability"><span class="pulse"></span> Focused on quality · Curious by nature</div>
 </div>
-<div class="portrait-stage" aria-label="Abstract monogram portrait placeholder"><div class="orbit"></div><div class="float-tag tag-one">PLAYWRIGHT · CYPRESS</div><div class="float-tag tag-two">TEST. LEARN. IMPROVE.</div><div class="portrait-card"><div class="portrait-monogram">RC</div><div class="person-silhouette"></div><div class="portrait-label"><b>Rukesh Chowdary</b>QUALITY ENGINEER / AUTOMATION</div></div></div>
+<div class="portrait-stage" aria-label="Portrait of Rukesh Chowdary"><div class="orbit"></div><div class="float-tag tag-one">PLAYWRIGHT · CYPRESS</div><div class="float-tag tag-two">TEST. LEARN. IMPROVE.</div><div class="portrait-card"><img class="portrait-photo" src="assets/rukesh-portrait.jpg" alt="Professional portrait of Rukesh Chowdary"><div class="portrait-label"><b>Rukesh Chowdary</b>QUALITY ENGINEER / AUTOMATION</div></div></div>
 </div><div class="scroll-cue">Scroll to explore<span>↓</span></div></section>
 
 <section class="section" id="impact"><div class="wrap reveal"><div class="stats">
